@@ -3,9 +3,8 @@ import '../css/snackbar.css';
 import {getItems} from './items.js';
 import {getUsers, addUser} from './usere.js';
 import {getData} from './test.js';
-
-
 import {getEntries} from './diary.js';
+
 document.querySelector(
     '#app'
 ).innerHTML = `Moi kirjaantunut käyttäjä ${localStorage.getItem('nimi')}`;
