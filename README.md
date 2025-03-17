@@ -1,59 +1,25 @@
-# Vite Front-end Projekti
+# 01. Asennukset
 
-Tämä on front-end-projekti, joka on tehty Vite-kehyksellä.
+## Tavoite  
+Tavoitteena on asentaa **Robot Framework** -automaatiotestaustyökalu ja sen lisäosat.
 
-## Teknologiat
-- HTML
-- CSS
-- JavaScript
-- Vite
+## Tarvittavat työkalut  
+Asenna seuraavat työkalut:  
+- Robot Framework  
+- Browser Library  
+- Requests Library  
+- CryptoLibrary  
+- Robotidy  
 
-## Linkit
-[GitHub-repo](https://github.com/SaraHussaini/vite-front-end-projekti)
+## Asennusohjeet  
 
-## Kuvakaappaukset
-*Tähän voit lisätä kuvakaappauksia myöhemmin.*
-
-## Ominaisuudet
-- ✅ Käyttäjän kirjautuminen
-- ✅ Responsiivinen käyttöliittymä
-- ✅ Hakutoiminto# Vite Front-end Projekti
-
-Tämä on front-end-projekti, joka on tehty Vite-kehyksellä.
-
-## Teknologiat
-- HTML
-- CSS
-- JavaScript
-- Vite
-
-## Linkit
-[GitHub-repo](https://github.com/SaraHussaini/vite-front-end-projekti)
-
-## Kuvakaappaukset
-*Tähän voit lisätä kuvakaappauksia myöhemmin.*
-
-## Ominaisuudet
-- ✅ Käyttäjän kirjautuminen
-- ✅ Responsiivinen käyttöliittymä
-- ✅ HakutoimintoCTRL + nano REnano README.md# Vite Front-end Projekti
-
-Tämä on front-end-projekti, joka on tehty Vite-kehyksellä.
-
-## ��� Teknologiat
-- HTML
-- CSS
-- JavaScript
-- Vite
-
-## ��� Linkit
-[GitHub-repo](https://github.com/SaraHussaini/vite-front-end-projekti)
-
-## ��� Kuvakaappaukset
-*Tähän voit lisätä kuvakaappauksia myöhemmin.*
-
-## ��� Ominaisuudet
-- ✅ Käyttäjän kirjautuminen
-- ✅ Responsiivinen käyttöliittymä
-- ✅ Hakutoiminto
-
+### 1. Luo testauskansiot  
+Avaa VSCode ja varmista, että projektissasi on seuraava rakenne:  
+projekti/
+│── tests/
+│   ├── front/
+│   ├── back/
+│── src/
+│── public/
+│── .gitignore
+│── requirements.txt
