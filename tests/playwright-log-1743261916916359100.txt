@@ -1,0 +1,29 @@
+{"level":30,"time":"2025-03-29T15:25:18.521Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Listening on 61070"}
+(node:7240) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-29T15:25:18.752Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-29T15:25:20.482Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-03-29T15:25:20.483Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-29T15:25:20.483Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-29T15:25:20.490Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-29T15:25:20.490Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-29T15:25:20.559Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active context"}
+{"level":30,"time":"2025-03-29T15:25:20.916Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-29T15:25:20.917Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active page"}
+{"level":30,"time":"2025-03-29T15:25:21.428Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-29T15:25:21.472Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-29T15:25:21.473Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Strict mode is enabled, find Locator with name=my-text in page."}
+{"level":30,"time":"2025-03-29T15:25:21.482Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Error of node method  typeText"}
+================= Original suppressed error =================
+locator.fill: Unknown engine "name" while parsing selector name=my-text
+Call log:
+[2m  - waiting for locator('name=my-text')[22m
+
+    at typeText (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:11836:19)
+    at async PlaywrightServer.typeText (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-03-29T15:25:21.627Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-29T15:25:21.627Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","Take screenshot with options: ":{"path":"C:\\Users\\sarah\\testaus(B_F)\\FE3\\hyte-projekti\\tests\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-29T15:25:21.788Z","pid":7240,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method takeScreenshot"}
