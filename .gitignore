@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.venv
+# Robot Framework -testilokit
+log.html
+output.xml
+report.html
+playwright-log.txt
+.env

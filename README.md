@@ -71,5 +71,12 @@ load_env.py: lataa .env-tiedoston ja tekee muuttujat Robot Frameworkille
 Tuolos:
 ![Web form -testisivu](./tests/image.png)
 
+## Tehtävä 4 – Uuden päiväkirjamerkinnän testaaminen
 
+- Testitiedosto: `tests/diary_entry_test.robot`
+- Testissä käytetään Browser Librarya ja ympäristömuuttujia.
+- `BASE_URL` määritellään `.env`-tiedostossa, jota ei tallenneta GitHubiin.
+- Selaimen ollessa päällä testi täyttää päiväkirjalomakkeen ja tarkistaa, että merkintä näkyy.
+
+Testin suorituskomento: robot --outputdir outputs tests/diary_entry_test.robot
 
