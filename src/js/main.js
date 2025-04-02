@@ -18,6 +18,7 @@ const getItemBtn = document.querySelector('.get_items');
 getItemBtn.addEventListener('click', getItems);
 //getItems();
 
+
 const getUserBtn = document.querySelector('.get_users');
 getUserBtn.addEventListener('click', getUsers);
 

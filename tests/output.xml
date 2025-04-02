@@ -1,147 +1,574 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-03-29T17:25:16.212633" rpa="false" schemaversion="5">
-<suite id="s1" name="Web Form Test" source="C:\Users\sarah\testaus(B_F)\FE3\hyte-projekti\tests\web_form_test.robot">
-<test id="s1-t1" name="Testaa Web Form -kenttiä turvallisesti" line="6">
-<kw name="New Browser" owner="Browser">
-<msg time="2025-03-29T17:25:17.042363" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\sarah\\testaus(B_F)\\FE3\\hyte-projekti\\tests\\browser\\traces\\temp\\d8568ca9-a999-4bd8-b39d-735f6681d005"}</msg>
-<msg time="2025-03-29T17:25:17.137424" level="INFO">Starting Browser process C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js using port 61070</msg>
-<msg time="2025-03-29T17:25:17.137424" level="INFO">Node startup parameters: ['node', 'C:\\Users\\sarah\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\Browser\\wrapper\\index.js', '61070']</msg>
-<msg time="2025-03-29T17:25:20.492480" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\sarah\\testaus(B_F)\\FE3\\hyte-projekti\\tests\\browser\\traces\\temp\\d8568ca9-a999-4bd8-b39d-735f6681d005"}</msg>
-<arg>chromium</arg>
-<arg>headless=No</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-03-29T17:25:17.033856" elapsed="3.458624"/>
+<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-04-02T17:21:06.960644" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\sarah\testaus(B_F)\FE3\hyte-projekti\tests\login_test.robot">
+<test id="s1-t1" name="Quick Get Request Test" line="6">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-04-02T17:21:07.276755" level="INFO">GET Request : url=https://www.google.com/ 
+ path_url=/ 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-04-02T17:21:07.276755" level="INFO">GET Response : url=https://www.google.com/ 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 02 Apr 2025 14:21:07 GMT', 'Expires': '-1', 'Cache-Control': 'private, max-age=0', 'Content-Type': 'text/html; charset=ISO-8859-1', 'Content-Security-Policy-Report-Only': "object-src 'none';base-uri 'self';script-src 'nonce-Z90qbu_nf8iiVDIYRzlSTA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp", 'Accept-CH': 'Sec-CH-Prefers-Color-Scheme', 'P3P': 'CP="This is not a P3P policy! See g.co/p3phelp for more info."', 'Content-Encoding': 'gzip', 'Server': 'gws', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'SOCS=CAAaBgiA_LG_Bg; expires=Sat, 02-May-2026 14:21:07 GMT; path=/; domain=.google.com; Secure; SameSite=lax, AEC=AVcja2f7ekKW0XCwwZFf8WGDjqu-rmOW_kjEsnWTUZoGsCN7djiXmYM_0Q; expires=Mon, 29-Sep-2025 14:21:07 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, __Secure-ENID=26.SE=fKc0PGBBNpRycyqyjNPfxGbWrofFw5sElTxsdTS7ajMI5la38LmOAe7qzjqPoaIuKYSywn2wqZKZooYXwiD9jrpWi42aK0nPdOPXdWBh-0lXmlNFewK-pQvvDJ4uy00bdMCw7d_QU3Q3kJG-P19w3XoZD-w7Ip-xWDMNlrt5aGNYWDmSNzSP5tsA7WfEmKg3fqVxLo8eY0fRKfG3MSoTHzelrqmQFVeiiSCnWp0Hu-xsIHipgt936hOEmlYfwA2v; expires=Sun, 03-May-2026 06:39:25 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} 
+ body=&lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schema.org/WebPage" lang="fi"&gt;&lt;head&gt;&lt;meta content="text/html; charset=UTF-8" http-equiv="Content-Type"&gt;&lt;meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce="Z90qbu_nf8iiVDIYRzlSTA"&gt;(function(){var _g={kEI:'00ftZ76SDuq_wPAPiaG-oAw',kEXPI:'0,202791,3497462,1131,448529,90132,14112,64701,360901,270476,19568,5239520,2218,15,36,36812535,25227441,1240,138268,8182,71102,6750,23880,9139,744,2,1,3851,328,6226,34310,29855,1346,13702,15635,136,5393,42514,32010,3774,4567,41,13639,1,5539,1202,2894,1212,350,9985,748,8147,3120,1814,2,1887,2146,1807,2810,5774,1202,3108,8753,1965,1623,143,168,8860,1789,13134,1756,1634,2459,802,458,2532,35,3074,346,3757,56,1542,2,311,4534,3282,569,2367,1868,7,1244,1816,3681,201,354,656,611,3971,429,5,110,4099,1834,1203,369,664,3702,3321,901,125,1581,922,149,568,2,97,1740,1021,9,3,2510,49,3653,916,1000,1480,250,362,770,705,5,709,706,420,1616,1011,208,248,530,404,47,648,1123,61,12,691,2,54,71,103,314,1066,211,207,1404,345,89,2976,310,935,3,12,293,1332,267,250,2,1,2,2,2,455,3,90,124,114,611,692,195,365,98,635,23,705,145,113,4,5,62,361,119,460,716,405,251,249,68,55,19,3,107,18,697,209,131,3,3,221,3,49,15,273,190,2,65,622,1,15,2,5,734,388,174,186,661,183,64,190,98,28,3,3,379,67,189,94,2,439,649,486,4,1,2,2,2,168,453,452,478,54,123,105,13,153,292,308,7,110,50,239,175,281,71,12,90,133,58,5,27,257,550,98,114,86,64,193,349,164,606,1599,1798,18,399,59,257,13,204,585,608,137,228,728,4,261,1,6,43,20907310,375834,4,28852,18,4344,196,8,5639,1182,5,4349,90,382,210,4,1508,259,859,4,1331,881,3,1099,3639796,2366569',kBL:'Lhp5',kOPI:89978449};(function(){var a;((a=window.google)==null?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn='webhp';google.kHL='fi';})();(function(){
+var g=this||self;function k(){return window.google&amp;&amp;window.google.kOPI||null};var l,m=[];function n(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||l}function p(a){for(var b=null;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("leid")));)a=a.parentNode;return b}function q(a){/^http:/i.test(a)&amp;&amp;window.location.protocol==="https:"&amp;&amp;(google.ml&amp;&amp;google.ml(Error("a"),!1,{src:a,glmm:1}),a="");return a}
+function r(a,b,d,c,h){var e="";b.search("&amp;ei=")===-1&amp;&amp;(e="&amp;ei="+n(c),b.search("&amp;lei=")===-1&amp;&amp;(c=p(c))&amp;&amp;(e+="&amp;lei="+c));var f=b.search("&amp;cshid=")===-1&amp;&amp;a!=="slh";c="&amp;zx="+Date.now().toString();g._cshid&amp;&amp;f&amp;&amp;(c+="&amp;cshid="+g._cshid);(d=d())&amp;&amp;(c+="&amp;opi="+d);return"/"+(h||"gen_204")+"?atyp=i&amp;ct="+String(a)+"&amp;cad="+(b+e+c)};l=google.kEI;google.getEI=n;google.getLEI=p;google.ml=function(){return null};google.log=function(a,b,d,c,h,e){e=e===void 0?k:e;d||(d=r(a,b,e,c,h));if(d=q(d)){a=new Image;var f=m.length;m[f]=a;a.onerror=a.onload=a.onabort=function(){delete m[f]};a.src=d}};google.logUrl=function(a,b){b=b===void 0?k:b;return r("",a,b)};}).call(this);(function(){google.y={};google.sy=[];var d;(d=google).x||(d.x=function(a,b){if(a)var c=a.id;else{do c=Math.random();while(google.y[c])}google.y[c]=[a,b];return!1});var e;(e=google).sx||(e.sx=function(a){google.sy.push(a)});google.lm=[];var f;(f=google).plm||(f.plm=function(a){google.lm.push.apply(google.lm,a)});google.lq=[];var g;(g=google).load||(g.load=function(a,b,c){google.lq.push([[a],b,c])});var h;(h=google).loadAll||(h.loadAll=function(a,b){google.lq.push([a,b])});google.bx=!1;var k;(k=google).lx||(k.lx=function(){});var l=[],m;(m=google).fce||(m.fce=function(a,b,c,n){l.push([a,b,c,n])});google.qce=l;}).call(this);google.f={};(function(){
+document.documentElement.addEventListener("submit",function(b){var a;if(a=b.target){var c=a.getAttribute("data-submitfalse");a=c==="1"||c==="q"&amp;&amp;!a.elements.q.value?!0:!1}else a=!1;a&amp;&amp;(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener("click",function(b){var a;a:{for(a=b.target;a&amp;&amp;a!==document.documentElement;a=a.parentElement)if(a.tagName==="A"){a=a.getAttribute("data-nohref")==="1";break a}a=!1}a&amp;&amp;b.preventDefault()},!0);}).call(this);&lt;/script&gt;&lt;style&gt;#gbar,#guser{font-size:13px;padding-top:1px !important;}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
+&lt;/style&gt;&lt;style&gt;body,td,a,p,.h{font-family:sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#1967d2}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px sans-serif}.gsfs{font:17px sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:#000}a{color:#681da8;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#1967d2}a:visited{color:#681da8}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#f8f9fa;border:solid 1px;border-color:#dadce0 #70757a #70757a #dadce0;height:30px}.lsbb{display:block}#WqQANb a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;color:#000;border:none;cursor:pointer;height:30px;margin:0;outline:0;font:15px sans-serif;vertical-align:top}.lsb:active{background:#dadce0}.lst:focus{outline:none}.Ucigb{width:458px}&lt;/style&gt;&lt;script nonce="Z90qbu_nf8iiVDIYRzlSTA"&gt;(function(){window.google.erd={jsr:1,bv:2195,de:true,dpf:'BPoQKJtnWSeNpgS53PiwWHDAUuNFIwArqTFGuX4mP9o'};
+var g=this||self;var k,l=(k=g.mei)!=null?k:1,m,p=(m=g.diel)!=null?m:0,q,r=(q=g.sdo)!=null?q:!0,t=0,u,w=google.erd,x=w.jsr;google.ml=function(a,b,d,n,e){e=e===void 0?2:e;b&amp;&amp;(u=a&amp;&amp;a.message);d===void 0&amp;&amp;(d={});d.cad="ple_"+google.ple+".aple_"+google.aple;if(google.dl)return google.dl(a,e,d,!0),null;b=d;if(x&lt;0){window.console&amp;&amp;console.error(a,b);if(x===-2)throw a;b=!1}else b=!a||!a.message||a.message==="Error loading script"||t&gt;=l&amp;&amp;!n?!1:!0;if(!b)return null;t++;d=d||{};b=encodeURIComponent;var c="/gen_204?atyp=i&amp;ei="+b(google.kEI);google.kEXPI&amp;&amp;(c+="&amp;jexpid="+b(google.kEXPI));c+="&amp;srcpg="+b(google.sn)+"&amp;jsr="+b(w.jsr)+
+"&amp;bver="+b(w.bv);w.dpf&amp;&amp;(c+="&amp;dpf="+b(w.dpf));var f=a.lineNumber;f!==void 0&amp;&amp;(c+="&amp;line="+f);var h=a.fileName;h&amp;&amp;(h.indexOf("-extension:/")&gt;0&amp;&amp;(e=3),c+="&amp;script="+b(h),f&amp;&amp;h===window.location.href&amp;&amp;(f=document.documentElement.outerHTML.split("\n")[f],c+="&amp;cad="+b(f?f.substring(0,300):"No script found.")));google.ple&amp;&amp;google.ple===1&amp;&amp;(e=2);c+="&amp;jsel="+e;for(var v in d)c+="&amp;",c+=b(v),c+="=",c+=b(d[v]);c=c+"&amp;emsg="+b(a.name+": "+a.message);c=c+"&amp;jsst="+b(a.stack||"N/A");c.length&gt;=12288&amp;&amp;(c=c.substr(0,12288));a=c;n||google.log(0,"",a);return a};window.onerror=function(a,b,d,n,e){u!==a&amp;&amp;(a=e instanceof Error?e:Error(a),d===void 0||"lineNumber"in a||(a.lineNumber=d),b===void 0||"fileName"in a||(a.fileName=b),google.ml(a,!1,void 0,!1,a.name==="SyntaxError"||a.message.substring(0,11)==="SyntaxError"||a.message.indexOf("Script error")!==-1?3:p));u=null;r&amp;&amp;t&gt;=l&amp;&amp;(window.onerror=null)};})();&lt;/script&gt;&lt;/head&gt;&lt;body bgcolor="#fff"&gt;&lt;script nonce="Z90qbu_nf8iiVDIYRzlSTA"&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload = function(){window.n &amp;&amp; window.n();if (document.images){new Image().src=src;}
+if (!iesg){document.f&amp;&amp;document.f.q.focus();document.gbqf&amp;&amp;document.gbqf.q.focus();}
+}
+})();&lt;/script&gt;&lt;div id="mngb"&gt;&lt;div id=gbar&gt;&lt;nobr&gt;&lt;b class=gb1&gt;Haku&lt;/b&gt; &lt;a class=gb1 href="https://www.google.com/imghp?hl=fi&amp;tab=wi"&gt;Kuvahaku&lt;/a&gt; &lt;a class=gb1 href="https://maps.google.fi/maps?hl=fi&amp;tab=wl"&gt;Maps&lt;/a&gt; &lt;a class=gb1 href="https://play.google.com/?hl=fi&amp;tab=w8"&gt;Play&lt;/a&gt; &lt;a class=gb1 href="https://www.youtube.com/?tab=w1"&gt;YouTube&lt;/a&gt; &lt;a class=gb1 href="https://news.google.com/?tab=wn"&gt;Uutiset&lt;/a&gt; &lt;a class=gb1 href="https://mail.google.com/mail/?tab=wm"&gt;Gmail&lt;/a&gt; &lt;a class=gb1 href="https://drive.google.com/?tab=wo"&gt;Drive&lt;/a&gt; &lt;a class=gb1 style="text-decoration:none" href="https://www.google.fi/intl/fi/about/products?tab=wh"&gt;&lt;u&gt;Lisää&lt;/u&gt; &amp;raquo;&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div id=guser width=100%&gt;&lt;nobr&gt;&lt;span id=gbn class=gbi&gt;&lt;/span&gt;&lt;span id=gbf class=gbf&gt;&lt;/span&gt;&lt;span id=gbe&gt;&lt;/span&gt;&lt;a href="http://www.google.fi/history/optout?hl=fi" class=gb4&gt;Verkkohistoria&lt;/a&gt; | &lt;a  href="/preferences?hl=fi" class=gb4&gt;Asetukset&lt;/a&gt; | &lt;a target=_top id=gb_70 href="https://accounts.google.com/ServiceLogin?hl=fi&amp;passive=true&amp;continue=https://www.google.com/&amp;ec=GAZAAQ" class=gb4&gt;Kirjaudu&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div class=gbh style=left:0&gt;&lt;/div&gt;&lt;div class=gbh style=right:0&gt;&lt;/div&gt;&lt;/div&gt;&lt;center&gt;&lt;br clear="all" id="lgpd"&gt;&lt;div id="XjhHGf"&gt;&lt;img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png" style="padding:28px 0 14px" width="272" id="hplogo"&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;form action="/search" name="f"&gt;&lt;table cellpadding="0" cellspacing="0"&gt;&lt;tr valign="top"&gt;&lt;td width="25%"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="center" nowrap=""&gt;&lt;input name="ie" value="ISO-8859-1" type="hidden"&gt;&lt;input value="fi" name="hl" type="hidden"&gt;&lt;input name="source" type="hidden" value="hp"&gt;&lt;input name="biw" type="hidden"&gt;&lt;input name="bih" type="hidden"&gt;&lt;div class="ds" style="height:32px;margin:4px 0"&gt;&lt;div style="position:relative;zoom:1"&gt;&lt;input class="lst Ucigb" style="margin:0;padding:5px 8px 0 6px;vertical-align:top;color:#000;padding-right:38px" autocomplete="off" value="" title="Google-haku" maxlength="2048" name="q" size="57"&gt;&lt;img src="/textinputassistant/tia.png" style="position:absolute;cursor:pointer;right:5px;top:4px;z-index:300" data-script-url="/textinputassistant/13/fi_tia.js" id="tsuid_00ftZ76SDuq_wPAPiaG-oAw_1" alt="" height="23" width="27"&gt;&lt;script nonce="Z90qbu_nf8iiVDIYRzlSTA"&gt;(function(){var id='tsuid_00ftZ76SDuq_wPAPiaG-oAw_1';document.ge... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2025-04-02T17:21:07.276755" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>https://www.google.com</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2025-04-02T17:21:07.181527" elapsed="0.095228"/>
 </kw>
-<kw name="New Page" owner="Browser">
-<msg time="2025-03-29T17:25:21.438963" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
-<msg time="2025-03-29T17:25:21.438963" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-03-29T17:25:20.492480" elapsed="0.946987"/>
-</kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2025-03-29T17:25:21.458151" level="INFO">Title: 'Web form'</msg>
-<arg>==</arg>
-<arg>Web form</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-03-29T17:25:21.439467" elapsed="0.018684"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2025-03-29T17:25:21.458151" level="INFO">Types the text 'sarah' in the given field.</msg>
-<msg time="2025-03-29T17:25:21.795375" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2025-03-29T17:25:21.795375" level="INFO">See also file:///C:/Users/sarah/testaus%28B_F%29/FE3/hyte-projekti/tests/playwright-log-1743261916916359100.txt for additional details.</msg>
-<msg time="2025-03-29T17:25:21.795375" level="FAIL">Error: locator.fill: Unknown engine "name" while parsing selector name=my-text
-Call log:
-  - waiting for locator('name=my-text')
-</msg>
-<arg>name=my-text</arg>
-<arg>${USERNAME}</arg>
-<arg>delay=0.1 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="FAIL" start="2025-03-29T17:25:21.458151" elapsed="0.529409">Error: locator.fill: Unknown engine "name" while parsing selector name=my-text
-Call log:
-  - waiting for locator('name=my-text')
-</status>
-</kw>
-<kw name="Type Secret" owner="Browser">
-<arg>name=my-password</arg>
-<arg>$PASSWORD</arg>
-<arg>delay=0.1 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given secret from ``variable_name`` into the text field
-found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<arg>name=my-textarea</arg>
-<arg>Tämä on testiviesti.</arg>
-<arg>delay=0.1 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<kw name="Select Options By" owner="Browser">
-<arg>name=my-select</arg>
-<arg>value</arg>
-<arg>2</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<arg>name=my-datalist</arg>
-<arg>San Francisco</arg>
-<arg>delay=0.1 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<kw name="Check Checkbox" owner="Browser">
-<arg>name=my-check</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>xpath=//input[@type='radio' and @value='rd2']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<kw name="Set Input Files">
-<arg>name=my-file</arg>
-<arg>./tests/sample.txt</arg>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<kw name="Click With Options" owner="Browser">
-<arg>button</arg>
-<arg>delay=2 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<arg>id=message</arg>
-<arg>==</arg>
-<arg>Received!</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-29T17:25:21.987560" elapsed="0.000000"/>
-</kw>
-<msg time="2025-03-29T17:25:22.003392" level="INFO">Set timeout to: 10000</msg>
-<status status="FAIL" start="2025-03-29T17:25:17.033856" elapsed="4.953704">Error: locator.fill: Unknown engine "name" while parsing selector name=my-text
-Call log:
-  - waiting for locator('name=my-text')
-</status>
+<status status="PASS" start="2025-04-02T17:21:07.181527" elapsed="0.095228"/>
 </test>
-<status status="FAIL" start="2025-03-29T17:25:16.212633" elapsed="5.796181"/>
+<test id="s1-t2" name="Quick Get Request With Parameters Test" line="9">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-04-02T17:21:07.376468" level="INFO">GET Request : url=https://www.google.com/search?query=ciao (redirected) 
+ path_url=/search?query=ciao 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-04-02T17:21:07.376468" level="INFO">GET Response : url=https://consent.google.com/ml?continue=https://www.google.com/search%3Fquery%3Dciao&amp;gl=FI&amp;m=0&amp;pc=srp&amp;uxe=none&amp;cm=2&amp;hl=fi&amp;src=1 
+ status=200, reason=OK 
+ headers={'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'Date': 'Wed, 02 Apr 2025 14:21:07 GMT', 'P3P': 'CP="This is not a P3P policy! See g.co/p3phelp for more info."', 'Permissions-Policy': 'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*', 'Content-Security-Policy': "script-src 'nonce-P9ldbdSCt2ywY9eK7-WR3Q' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/ConsentHttp/cspreport;worker-src 'self', require-trusted-types-for 'script';report-uri /_/ConsentHttp/cspreport", 'Cross-Origin-Opener-Policy': 'unsafe-none', 'Accept-CH': 'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version', 'Cross-Origin-Resource-Policy': 'same-site', 'reporting-endpoints': 'default="/_/ConsentHttp/web-reports?context=eJzjKtHikmII0JBiMBL3YTifsYvptfUtprdf_FkuaAaxrM0OYhHJCGX5PzmUpbohjOWJbjjL80nhLOaHw1kygDiHLYJll0IEy5PWCBa-jggWhnURLAe2R7BcOBrB0nrzHOtkIDZUuMRqD8Q3J15mLZK4wtoAxEI8HJf7t-5nE_gx7dsGRiXtpPzC-MyU1LySzJLKtKL8vJLUvJTSzOLUorLUongjAyNTA2NjQz0D8_gCAwDZlUBu"', 'Content-Encoding': 'gzip', 'Server': 'ESF', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'X-Content-Type-Options': 'nosniff', 'Set-Cookie': '__Secure-ENID=26.SE=NsUZIsyRH8A4AVg9MPCW8pSaPoxQZcoyt2kQaBL6nbEJh72100vAWODJKDMVJ55i07mkIkN1uD99aFq8wkucQYEbg0xJmjpv-MPMAUUcf0DSIRA1WD3GbkMrqIg3CnY-fo6w9kMXF3O5WcwD8Ygc_eWAOPe7dRZNMhkmoQ5dq7ztXcJ1cBkX9aTaZAg45AwriacYdMjJWxhGxuOL2azzCjPiH3Zp0AfcJlFp9a1mH8jdaoDPc6PeRCRLGFkeiUgdbDMO; expires=Sun, 03-May-2026 06:39:25 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} 
+ body=&lt;!DOCTYPE html&gt;&lt;html lang="fi" dir="ltr"&gt;&lt;head&gt;&lt;style nonce="7rodKdflPw7R-haB9JaynQ"&gt;
+a, a:link, a:visited, a:active, a:hover {
+  color: #1a73e8;
+  text-decoration: none;
+}
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.box {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 24px auto 5px auto;
+  max-width: 800px;
+  padding: 24px;
+}
+.youtubeContainerUIModernization,
+.boxUIModernization {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+.signInContainerUIModernization {
+    display: flex;
+    justify-content: flex-end;
+}
+h1 {
+  color: #2c2c2c;
+  font-size: 24px;
+  hyphens: auto;
+  margin: 24px 0;
+}
+.openInNewIcon,
+.openInNewIconYouTube {
+  height: 12px;
+  width: 12px;
+  margin-bottom: -2px;
+  margin-left: 2px;
+
+  
+}
+.openInNewIcon {
+  fill: #0b57d0; // gm3-primary-blue
+}
+.openInNewIconYouTube {
+  fill: #065fd4; // yt-primary-dark-blue
+}
+.icaCallout {
+  background-color: #f8f9fa;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.icaCalloutGm3 {
+  background-color: #f8fafd;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.icaCalloutUIModernization,
+.icaCalloutUIModernizationGm3 {
+  color: #0f0f0f;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  background-color: #f8f9fa;
+  padding: 12px 24px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.icaCalloutUIModernization &gt; a {
+  color: #065fd4;  /* youtube dark-blue color */
+}
+.icaCalloutUIModernizationGm3 &gt; a {
+  color: #065fd4;  /* youtube dark-blue color */
+  text-decoration: underline;
+}
+.subUIModernization,
+.subUIModernizationGm3,
+.contentTextUIModernization,
+.contentTextUIModernization &gt; p {
+  color: #0f0f0f;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: left;
+}
+.contentTextUIModernization &gt; a,
+.contentTextUIModernization &gt; p &gt; a {
+  color: #065fd4;
+}
+.contentTextUIModernization &gt; p {
+  margin: 16px 0;
+}
+.contentTextUIModernization &gt; ul {
+  padding-left: 36px;
+  margin: 16px 0;
+}
+p, .sub, .subGm3, .contentText, .icaCallout {
+  color: #5f6368;;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.signin,
+.signinGm3 {
+  text-align: right;
+}
+.signInIconContainer {
+  width: 24px;
+  height: 24px;
+  margin: 0 6px 0 -6px;
+}
+.signInIcon {
+  fill: #065fd4; /* dark-blue-color */
+}
+.signinUIModernization {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+}
+.bulletUIModernization {
+  line-height: 18px;
+  margin: 8px 0;
+}
+.signinButtonDisplayUIModernization {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.horizontalContainerEndUIModernization {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cardHeaderUIModernization {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoCenter {
+  justify-content: center;
+}
+.logoUIModernization {
+  margin-right: auto;
+}
+.youTubeHeaderUIModernization {
+ padding: 20px 24px 0;
+}
+.saveButtonContainer,
+.saveButtonContainerNarrowScreen {
+  width: 100%;
+  margin-top: 12px;
+}
+.saveButtonContainerNarrowScreenUIModernization {
+  width: 100%;
+}
+.customButtonContainer {
+  height: 20px;
+  padding: 8px 0;
+  margin-top: 8px;
+}
+.navigationCtasYoutube {
+  text-align: right;
+}
+a.button {
+  color: #fff;
+}
+a.hairlinebutton,
+a.nolinebutton{
+  color: #1a73e8;
+}
+.navigationCtasYoutube a.hairlinebutton {
+  border-color: #1a73e8;
+}
+button, .button {
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+}
+input.button {
+  -webkit-appearance: none;
+}
+.basebutton {
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 36px;
+  margin: 12px 4px 0;
+  padding: 8px 24px;
+}
+.hairlinebutton {
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #dadce0;
+  border-style: solid;
+  max-height: 15px;
+}
+.basebuttonUIModernization {
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 18px;
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  height: 36px;
+  min-width: 72px;
+  border-radius: 18px;
+  padding: 0 16px;
+}
+.basebuttonUIModernization:focus,
+.basebuttonUIModernization:focus-visible,
+.basebuttonUIModernization:hover:focus,
+.basebuttonUIModernization:hover:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.signInButtonUIModernization {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  color: #065fd4;
+}
+.signInButtonUIModernization:focus-visible {
+  background-color: #fff;
+  border: 1px solid #065fd4;
+  color: #065fd4;
+}
+.signInButtonUIModernization:hover {
+  background-color: #f2f8ff;
+  border: 1px solid transparent;
+  color: #065fd4;
+}
+.signInButtonUIModernization:hover:focus-visible {
+  background-color: #f2f8ff;
+  border: 1px solid #065fd4;
+  color: #065fd4;
+}
+.signInButtonUIModernization:active,
+.signInButtonUIModernization:active:hover,
+.signInButtonUIModernization:active:focus-visible {
+  background-color: #e5e5e5;
+  border: 1px solid transparent;
+  color: #065fd4;
+}
+.signinUIModernization a,
+.signinUIModernization a:link,
+.signinUIModernization a:visited,
+.signinUIModernization a:active,
+.signinUIModernization a:hover,
+.signinUIModernization a:focus-visible {
+  color: #065fd4;
+}
+.hairlinebuttonUIModernization {
+  background-color: #0f0f0f;
+  border: 2px solid transparent;
+  color: #fff;
+  }
+.hairlinebuttonUIModernization:focus-visible {
+  background-color: #fff;
+  border: 2px solid #0f0f0f;
+  color: #0f0f0f;
+}
+.hairlinebuttonUIModernization:hover {
+  background-color: #272727;
+  border: 2px solid transparent;
+  color: #fff;
+}
+.hairlinebuttonUIModernization:hover:focus-visible {
+  background-color: #e7e7e7;
+  border: 2px solid transparent;
+  color: #0f0f0f;
+}
+.hairlinebuttonUIModernization:active,
+.hairlinebuttonUIModernization:active:hover,
+.hairlinebuttonUIModernization:active:focus-visible {
+  background-color: #3f3f3f;
+  border: 2px solid transparent;
+  color: #fff;
+}
+.customizeButtonContainerUIModernization {
+  display: flex;
+  text-align: center;
+}
+.customizeButtonUIModernization {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  text-align: center;
+}
+.customizeButtonUIModernization:focus-visible {
+  background-color: #fff;
+  border: 2px solid #0f0f0f;
+}
+.customizeButtonUIModernization:hover {
+  background-color: #e6e6e6;
+  border: 2px solid transparent;
+}
+.customizeButtonUIModernization:active,
+.customizeButtonUIModernization:active:hover,
+.customizeButtonUIModernization:active:focus-visible {
+  background-color: #cfcfcf;
+  border: 2px solid transparent;
+}
+a.basebuttonUIModernization.customizeButtonUIModernization,
+a.basebuttonUIModernization.customizeButtonUIModernization:link,
+a.basebuttonUIModernization.customizeButtonUIModernization:visited,
+a.basebuttonUIModernization.customizeButtonUIModernization:active,
+a.basebuttonUIModernization.customizeButtonUIModernization:focus {
+  color: #0f0f0f;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.saveButtonUIModernization {
+  text-align: center;
+}
+.detailsButtonUIModernization {
+  margin-top: 16px;
+  min-width: 220px;
+}
+.error {
+  border: 2px solid #d93025;
+  border-radius: 5px;
+  color: #d93025;
+  margin: auto;
+  padding: 5px;
+}
+.box a:hover, .boxUIModernization a:hover, .detailspage a:hover {
+  text-decoration: underline;
+}
+.footer {
+  margin-top: 16px;
+}
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerUIModernization {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.footer a {
+  margin-left: 24px;
+  white-space: nowrap;
+}
+.footer a, .footer select, .footer input {
+  color: #757575;
+  font-size: 12px;
+}
+.footerUIModernization a {
+  margin-left: 8px;
+  padding: 0 8px;
+}
+.footerUIModernization a,
+.footerUIModernization input,
+.footerUIModernization select {
+  color: #606060;  /* grey5 color - youtube secondary color */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+.footerUIModernization form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.languagepicker {
+  display: inline-flex;
+  margin: 2px 0;
+}
+#language-form,
+#language-select {
+  margin: 0 2px;
+}
+#language-select {
+  color: #757575;
+}
+.detailspage {
+  margin: 24px auto 0 auto;
+  max-width: 700px;
+}
+.detailspage h1, .detailspage h2 {
+  font-size: 22px
+}
+.setting {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 11px;
+  padding: 24px 24px 20px 24px;
+  text-align: right;
+}
+.settingUIModernization {
+  border: 1px solid #dadce0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 24px;
+  text-align: right;
+}
+.onOffButtons {
+  padding-top: 24px;
+}
+.sub {
+  padding: 24px 24px 20px 24px;
+}
+.subGm3 {
+  padding: 24px 0 34px;
+}
+hr {
+  margin: 12px -24px 12px;
+  border: 0;
+  border-top: 1px solid #dadce0;
+}
+fieldset {
+  border: none;
+  padding: 0;
+}
+label {
+  margin: 24px;
+}
+td {
+  vertical-align: top;
+}
+.setting h2, .setting h3, h3,
+.settingGm3 h2, .settingGm3 h3 {
+  color: #3c4043;
+  margin: 0;
+  text-align: left;
+}
+.yt-text {
+  color: #5f6368;
+  font-size: 14px;
+  font-weight: 300;
+}
+.detailspageUIModernization {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.subUIModernization &gt; ul &gt; li,
+.subUIModernizationGm3 &gt; ul &gt; li,
+.detailspageUIModernization p{
+  color: #606060;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.detailspageUIModernization &gt; p,
+.settingUIModernization p,
+.subUIModernization &gt; p,
+.... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2025-04-02T17:21:07.376468" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>https://www.google.com/search</arg>
+<arg>params=query=ciao</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2025-04-02T17:21:07.276755" elapsed="0.100675"/>
+</kw>
+<status status="PASS" start="2025-04-02T17:21:07.276755" elapsed="0.101297"/>
+</test>
+<test id="s1-t3" name="Quick Get A JSON Body Test" line="12">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-04-02T17:21:07.460840" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts/1 
+ path_url=/posts/1 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-04-02T17:21:07.460840" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts/1 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 02 Apr 2025 14:21:07 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1738187860&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=weCq8b1hbTxekuEhPRs7F2chNnK7jnCdlCr5cgdOomE%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1738187860&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=weCq8b1hbTxekuEhPRs7F2chNnK7jnCdlCr5cgdOomE%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1738187866', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'expires': '-1', 'X-Content-Type-Options': 'nosniff', 'etag': 'W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"', 'Via': '1.1 vegur', 'Age': '7331', 'cf-cache-status': 'HIT', 'Server': 'cloudflare', 'CF-RAY': '92a0f88988112c6c-CPH', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=19874&amp;min_rtt=16221&amp;rtt_var=8692&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2840&amp;recv_bytes=785&amp;delivery_rate=251525&amp;cwnd=33&amp;unsent_bytes=0&amp;cid=fcffc602a9191bba&amp;ts=30&amp;x=0"'} 
+ body={
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+} 
+ </msg>
+<msg time="2025-04-02T17:21:07.460840" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>https://jsonplaceholder.typicode.com/posts/1</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2025-04-02T17:21:07.380323" elapsed="0.080517"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2025-04-02T17:21:07.460840" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<arg>1</arg>
+<arg>${response.json()}[id]</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-04-02T17:21:07.460840" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-04-02T17:21:07.379574" elapsed="0.081266"/>
+</test>
+<status status="PASS" start="2025-04-02T17:21:06.964106" elapsed="0.496734"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Web Form Test" id="s1" pass="0" fail="1" skip="0">Web Form Test</stat>
+<stat name="Login Test" id="s1" pass="3" fail="0" skip="0">Login Test</stat>
 </suite>
 </statistics>
 <errors>

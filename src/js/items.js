@@ -32,7 +32,10 @@ const getItems = async () => {
   console.log(items);
 };
 
+
+
 export {getItems};
+
 
 
 
