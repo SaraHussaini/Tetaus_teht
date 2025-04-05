@@ -1,0 +1,34 @@
+{"level":30,"time":"2025-04-05T05:46:50.662Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Listening on 53932"}
+(node:25172) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-05T05:46:50.796Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-05T05:46:51.464Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-05T05:46:51.465Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-05T05:46:51.465Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-05T05:46:51.480Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-05T05:46:51.481Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":800,\"height\":600}}"}
+{"level":30,"time":"2025-04-05T05:46:51.481Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-05T05:46:51.481Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Trace file: "}
+{"level":30,"time":"2025-04-05T05:46:51.515Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active context"}
+{"level":30,"time":"2025-04-05T05:46:51.515Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-05T05:46:51.540Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-05T05:46:51.540Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-05T05:46:51.852Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-05T05:46:51.852Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active page"}
+{"level":30,"time":"2025-04-05T05:46:52.058Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-05T05:46:52.073Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-05T05:46:52.073Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Strict mode is enabled, find Locator with xpath=(//input[@name=\"username\" and text()=\"name\"]) in page."}
+{"level":30,"time":"2025-04-05T05:47:02.090Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Error of node method  typeText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('xpath=(//input[@name="username" and text()="name"])')[22m
+
+    at typeText (C:\Users\sarah\testaus(B_F)\FE3\hyte-projekti\.venv\lib\site-packages\Browser\wrapper\index.js:11836:19)
+    at async PlaywrightServer.typeText (C:\Users\sarah\testaus(B_F)\FE3\hyte-projekti\.venv\lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-04-05T05:47:02.213Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-05T05:47:02.214Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","Take screenshot with options: ":{"path":"C:\\Users\\sarah\\testaus(B_F)\\FE3\\hyte-projekti\\outputs\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-04-05T05:47:02.475Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method takeScreenshot"}

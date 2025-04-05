@@ -1,0 +1,50 @@
+{"level":30,"time":"2025-04-05T05:51:38.268Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Listening on 54158"}
+(node:16084) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-05T05:51:38.750Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-05T05:51:39.349Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-05T05:51:39.350Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-05T05:51:39.350Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-05T05:51:39.368Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-05T05:51:39.368Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":600,\"width\":800}}"}
+{"level":30,"time":"2025-04-05T05:51:39.369Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-05T05:51:39.369Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Trace file: "}
+{"level":30,"time":"2025-04-05T05:51:39.391Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active context"}
+{"level":30,"time":"2025-04-05T05:51:39.391Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-05T05:51:39.409Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-05T05:51:39.410Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-05T05:51:39.679Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-05T05:51:39.680Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active page"}
+{"level":30,"time":"2025-04-05T05:51:39.869Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-05T05:51:39.890Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-05T05:51:39.891Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Strict mode is enabled, find Locator with xpath=(//input[@name=\"username\" and text()=\"name\"]) in page."}
+{"level":30,"time":"2025-04-05T05:51:49.903Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Error of node method  typeText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('xpath=(//input[@name="username" and text()="name"])')[22m
+
+    at typeText (C:\Users\sarah\testaus(B_F)\FE3\hyte-projekti\.venv\lib\site-packages\Browser\wrapper\index.js:11836:19)
+    at async PlaywrightServer.typeText (C:\Users\sarah\testaus(B_F)\FE3\hyte-projekti\.venv\lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-04-05T05:51:50.019Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-05T05:51:50.020Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","Take screenshot with options: ":{"path":"C:\\Users\\sarah\\testaus(B_F)\\FE3\\hyte-projekti\\outputs\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-04-05T05:51:50.288Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-05T05:51:50.345Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-05T05:51:50.352Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-05T05:51:50.360Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-05T05:51:50.365Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-05T05:51:50.374Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-05T05:51:50.380Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-05T05:51:50.391Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-05T05:51:50.396Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-05T05:51:50.408Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active context"}
+{"level":30,"time":"2025-04-05T05:51:50.408Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Changing current active page: page=1379f160-a49b-4916-89ff-8b9cb73ea9ff"}
+{"level":30,"time":"2025-04-05T05:51:50.408Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active page"}
+{"level":30,"time":"2025-04-05T05:51:50.417Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-04-05T05:51:50.444Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Removed page=f2fc4418-9f52-4810-80a5-a994f8c8f9b4 from context=f0880b14-3960-4f1b-9c93-7291589e4fb2 page stack"}
+{"level":30,"time":"2025-04-05T05:51:50.491Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-04-05T05:51:50.701Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-05T05:51:51.014Z","pid":16084,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method closeAllBrowsers"}
