@@ -273,3 +273,8 @@ public/
 ├── log.html        ✅ Testien lokiraportti
 
 ├── report.html     ✅ Testien yhteenvetoraportti
+
+##### 🔗 Testiraportit GitHub Pages -sivulla
+
+- ✅ [log.html (testiloki)](https://sarahussaini.github.io/Tetaus_teht/public/log.html)
+- ✅ [report.html (testiraportti)](https://sarahussaini.github.io/Tetaus_teht/public/report.html)
