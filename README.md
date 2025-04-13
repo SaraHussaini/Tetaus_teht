@@ -242,3 +242,34 @@ echo "✅ Testit suoritettu! Raportit löytyvät kansiosta: outputs/"
 ### 📝 Yhteenveto
 
 Tässä tehtävässä siirrettiin testien raportti- ja lokitiedostot erilliseen `outputs/`-kansioon. Tämä auttaa pitämään projektin rakenteen siistinä ja helpottaa testitulosten löytämistä.
+
+# Tehtävä8-GitHub Pages ja HTML-raportit
+
+## 🔧 Mitä tehtiin:
+Luotiin public/-kansio, johon kopioitiin testien log.html ja report.html
+
+Ajettiin testit Robot Frameworkilla ja tallennettiin tulokset outputs/-kansioon
+
+Kopioitiin raporttitiedostot public/-kansioon
+
+Julkaistiin GitHub Pages -sivusto GitHubin asetuksista
+
+Lisättiin linkit raportteihin README-tiedostoon
+
+### Kirjoita Git Bashissa tai VSCode-terminalissa:
+
+
+```bash
+
+cp outputs/log.html public/log.html
+cp outputs/report.html public/report.html
+```
+
+
+#### 📂 Kansiorakenne
+
+public/
+
+├── log.html        ✅ Testien lokiraportti
+
+├── report.html     ✅ Testien yhteenvetoraportti
