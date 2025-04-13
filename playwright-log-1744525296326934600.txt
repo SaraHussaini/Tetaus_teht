@@ -1,0 +1,62 @@
+{"level":30,"time":"2025-04-13T06:21:37.395Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Listening on 59314"}
+(node:28176) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-13T06:21:37.533Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-13T06:21:37.913Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-13T06:21:37.914Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-13T06:21:37.914Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-13T06:21:37.938Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:37.941Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:38.617Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:38.617Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:38.673Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-04-13T06:21:38.674Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-04-13T06:21:38.681Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-13T06:21:38.681Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":600,\"width\":800}}"}
+{"level":30,"time":"2025-04-13T06:21:38.681Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-13T06:21:38.681Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Trace file: "}
+{"level":30,"time":"2025-04-13T06:21:38.701Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active context"}
+{"level":30,"time":"2025-04-13T06:21:38.701Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-13T06:21:38.707Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-13T06:21:38.708Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-13T06:21:38.903Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-13T06:21:38.903Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active page"}
+{"level":30,"time":"2025-04-13T06:21:41.252Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
+Call log:
+[2m  - navigating to "http://localhost:5173/", waiting until "load"[22m
+
+    at newPage (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-13T06:21:41.340Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\sarah\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-04-13T06:21:41.342Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-04-13T06:21:41.416Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:41.416Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:41.419Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:41.420Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:41.422Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:41.422Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:41.430Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:41.430Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-13T06:21:41.433Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Changed active context"}
+{"level":30,"time":"2025-04-13T06:21:41.437Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-04-13T06:21:41.451Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-04-13T06:21:43.860Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-13T06:21:44.113Z","pid":28176,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method closeAllBrowsers"}

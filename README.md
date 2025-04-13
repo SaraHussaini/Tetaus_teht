@@ -220,3 +220,25 @@ Test Web Form
     #Get Text    id=message    ==    Received!
   ```
 
+## 🧪 Tehtävä7-Testien ajaminen 
+
+Projektissa käytetään [Robot Frameworkia](https://robotframework.org/) testaukseen.
+
+### 🛠 Yhden komennon testiajo
+
+Voit ajaa kaikki testit yhdellä komennolla:
+
+```bash
+
+# Luo outputs-kansio, jos sitä ei ole
+mkdir -p outputs
+
+# Aja Robot Framework -testit ja ohjaa raportit outputs-kansioon
+robot --output outputs/output.xml --log outputs/log.html --report outputs/report.html tests/
+
+echo "✅ Testit suoritettu! Raportit löytyvät kansiosta: outputs/"
+
+```
+### 📝 Yhteenveto
+
+Tässä tehtävässä siirrettiin testien raportti- ja lokitiedostot erilliseen `outputs/`-kansioon. Tämä auttaa pitämään projektin rakenteen siistinä ja helpottaa testitulosten löytämistä.

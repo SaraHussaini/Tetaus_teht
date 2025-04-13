@@ -32,3 +32,4 @@ Call log:
 {"level":30,"time":"2025-04-05T05:47:02.213Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Start of node method takeScreenshot"}
 {"level":30,"time":"2025-04-05T05:47:02.214Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","Take screenshot with options: ":{"path":"C:\\Users\\sarah\\testaus(B_F)\\FE3\\hyte-projekti\\outputs\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
 {"level":30,"time":"2025-04-05T05:47:02.475Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-05T06:47:31.521Z","pid":25172,"hostname":"DESKTOP-IPQ32FP","msg":"Removed page=2db6be2c-47a9-4c94-8512-65f102de39d2 from context=c48c0a13-20db-4fb8-a9e4-248d9de87c1d page stack"}
