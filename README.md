@@ -350,4 +350,11 @@ Test 5 – Get Diary Entries
 robot --outputdir outputs tests/server_api_test.robot
 ```
 
+## ✅ Tehtävä 10 – Testien dokumentointi Markdownilla
+
+Tässä tehtävässä dokumentoitiin HYTE-projektin testit Markdown-muotoon tiedostossa **TESTAUS.md**.
+
+📄 Katso testausdokumentaatio:
+👉 [TESTAUS.md](https://github.com/SaraHussaini/Tetaus_teht/commit/4f7b1b45ef23854f02d34f4fc1f522ae70399692)
+
 
